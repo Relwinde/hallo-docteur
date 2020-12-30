@@ -1,0 +1,61 @@
+.carousel {
+     width: 25%;
+     min-width: 400px;
+}
+
+.carousel img {
+     width: 100%;
+}
+
+.carousel-caption {
+     background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-nav {
+     background-color: #6464ffb2;
+}
+
+.navbar-brand button {
+     line-height: 15px;
+}
+
+#urg {
+     background-image: url(images/ambulance-solid.svg);
+     background-repeat: no-repeat;
+     padding-left: 55px;
+     background-size: 30%;
+     background-position-y: center;
+     background-position-x: 2px;
+}
+
+.sect-head {
+     font-size: 3rem;
+}
+.connect {
+     z-index: 100;
+     right: 0;
+     bottom: 0;
+     width: 20%;
+}
+
+.f-sect {
+     background-image: url(images/sect-bckg.png);
+     background-repeat: repeat-y;
+     background-size: cover;
+}
+.spec {
+     min-width: 180px;
+}
+.spec .card-img {
+     background-image: url(images/medec.png);
+     height: 300px;
+     width: 300px;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     overflow: hidden;
+}
+
+.spec h5 {
+     font-size: 150%;
+}

@@ -1,0 +1,48 @@
+.carousel {
+     width: 25%;
+     min-width: 350px;
+}
+
+.carousel img {
+     width: 100%;
+}
+
+.carousel-caption {
+     background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-nav {
+     background-color: #6464ffb2;
+}
+
+.navbar-brand button {
+     line-height: 15px;
+}
+
+#urg {
+     background-image: url(../images/ambulance-solid.svg);
+     background-repeat: no-repeat;
+     padding-left: 55px;
+     background-size: 30%;
+     background-position-y: center;
+     background-position-x: 2px;
+}
+
+.virus {
+     animation: danger 0.5s infinite;
+}
+
+@keyframes danger {
+     0% {
+          background-color: blue;
+     }
+     50% {
+          background-color: yellow;
+     }
+     75% {
+          background-color: red;
+     }
+     100% {
+          background-color: white;
+     }
+}

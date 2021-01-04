@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact</title>
     <link rel="stylesheet" href="boot/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style/contact.css">
+    <link rel="stylesheet" href="contact.css">
 </head>
 <body>
     <header>
-        <div class="d-flex justify-content-center mt-3">
+        <div class="d-flex justify-content-center mt-3 flex-wrap">
         <div id="carouselExampleCaptions" class="carousel slide w-25" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -34,47 +34,56 @@
               </div>
             </div>
           </div>
-          <div class="menu ml-5">
-            <h1>Hallo Docteur</h1>
-            <nav class="navbar navbar-expand-lg navbar-light mt-3">
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto menu1">
-                      <div class="nav-item">
-                        <a class="nav-link bg-primary text-white" href="#">Acceuil</a>
-                      </div>
-                    <li class="nav-item">
-                      <a class="nav-link text-white" href="#">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-white" href="#">FAQ</a>
-                    </li>
-                  </ul>
-                </div>
-                <a href="#" class="btn btn-primary" role="button" aria-pressed="true">Se connecter <br> Creer un compte</a>
-              </nav>
-              <form class="form-inline mx-5 my-lg-1">
-                <input class="form-control mr-sm-2" placeholder="Chercher sur ce site" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-3" type="submit">Rechercher</button>
-              </form>
-              <div class="urgence my-5">
-                <button type="button" class="btn btn-danger my-4"><img src="images/ambulance-solid.png" width="20" height="20" alt=""> Urgence</button>
+          <div class="">
+            <h1 class="mx-sm-3 d-sm-block d-none">Hallo Docteur</h1>
+            <!--debut du nav-->
+            <nav class="navbar navbar-expand-sm navbar-light">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link bg-primary" href="#">Accueil<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">FAQ</a>
+                  </li>
+                </ul>
               </div>
+              <button type="submit" class="btn btn-primary mx-3">Créer un compte <br> Se connecter</button>
+            </nav>
+           <!--fin du nav-->
+            <div class="row mx-3">
+              <form class="form-inline my-2">
+                <input class="form-control mr-sm-2" type="seach" placeholder="Rechercher dur ce site">
+                <button class="btn btn-outline-success">Rechercher</button>
+              </form>              
+            </div>
+            <div class="urgence">
+              <button type="button" class="btn btn-danger my-4"><img src="images/ambulance-solid.png" width="20" height="20" alt=""> Urgence</button>
+            </div>
           </div>
         </div>
     </header>
-    <section class="sect">
+    <section class="container mt-5 sect">
       <div class="row"> 
-        <div class="leftparti">
-        <h4 class="col-6">
-          Joignez-nous
-        </h4>
+        <div class="leftparti col-lg-4 col-md-4 col-sm-12 mt-3">
+          <div class="text-center">
+            <h4 class="">
+              Joignez-nous
+            </h4>
+          </div>
           <div class="urgence">
             <button type="button" class="btn btn-danger my-4"> Cliquez pour appeler</button>
           </div>
-          <form class="form-inline">
+          <form class="form-block">
             <div class="form-group">
               <label for="inputPassword6">Nom</label>
-              <input id="inputPassword6" class="form-control mx-4 my-2" aria-describedby="passwordHelpInline">
+              <input id="inputPassword6" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
             </div>
             <div class="form-group">
               <label for="inputPassword6">Prenom</label>
@@ -85,6 +94,19 @@
               <input  id="inputPassword6" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
             </div>
           </form>
+          <div class="urgence">
+            <button type="submit" class="btn btn-primary mx-5">Submit</button>
+          </div>
+        </div>
+        <div class="rightparti col-lg-6 col-md-6 col-sm-12 my-5 mx-auto">
+          <div class="row d-flex justify-content-center mt-3">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11048.461795167195!2d6.126822531223295!3d46.18826124045589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8864e218e41cfa72!2sClinique%20dentaire%20scolaire%20%C3%A0%20Carouge!5e0!3m2!1sfr!2sbf!4v1609427137828!5m2!1sfr!2sbf" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <div class="col-12 d-flex justify-content-center">
+              <h3>suivez-nous</h3>
+            </div>
+            <img src="images/Facebook_48px.png" alt="">
+            <img src="images/Twitter_48px.png" alt="">
+          </div>
         </div>
       </div>
     </section>
@@ -92,4 +114,24 @@
     <script src="boot/jquery-3.5.1.min.js"></script>
     <script src="boot/bootstrap/js/bootstrap.min.js"></script>
 </body>
+<footer>
+  <div class="end d-flex justify-content-center row flex-wrap mx-auto container">
+    <div class="col-lg-4">
+      <h3>Plan du site</h3>
+      Accueil <br>
+      Contacts <br>
+      FAQ <br>
+      Connection
+    </div>
+    <div class="col-lg-4">
+      <h3>Partenaires</h3>
+      Simplon
+      AUF
+    </div>
+    <div class="col-lg-4">
+      <h3>Liens utiles</h3>
+      allo-docteur.com
+    </div>
+  </div>
+</footer>
 </html>

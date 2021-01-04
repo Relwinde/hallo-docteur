@@ -3,4 +3,4 @@
 const cont = document.querySelector(".nav");
 var h = img.clientHeight;
 cont.style.height = h;
-console.log(h);
+console.log(h);*/

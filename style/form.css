@@ -1,0 +1,17 @@
+body {
+     background-image: url(../images/sect-bckg.png);
+}
+
+footer {
+     background-image: url(../images/foot-bckg.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 500px;
+}
+.foot-head {
+     font-size: 250%;
+}
+
+footer li {
+     font-size: 100%;
+}

@@ -1,3 +1,19 @@
+.virus {
+     animation: danger 1s infinite;
+}
+
+@keyframes danger {
+     0% {
+          background-color: yellow;
+     }
+     50% {
+          background-color: rgba(255, 145, 0, 0.733);
+     }
+
+     100% {
+          background-color: red;
+     }
+}
 .carousel {
      width: 25%;
      min-width: 350px;
@@ -8,7 +24,7 @@
 }
 
 .carousel-caption {
-     background-color: rgba(17, 0, 255, 0.5);
+     background-color: rgba(0, 0, 0, 0.5);
 }
 
 .navbar-nav {
@@ -45,11 +61,11 @@
 }
 .spec {
      min-width: 300px;
-     width: 25%;
+     width: 20%;
 }
 .spec .card-img {
      background-image: url(images/medec.png);
-     height: 300px;
+     height: 200px;
      width: 100%px;
      background-size: cover;
      background-repeat: no-repeat;
@@ -63,8 +79,15 @@
 
 footer {
      background-image: url(images/foot-bckg.png);
+     background-repeat: no-repeat;
+     background-size: cover;
      height: 500px;
 }
 .foot-head {
+     font-size: 250%;
+}
+
+footer li {
      font-size: 100%;
+     
 }

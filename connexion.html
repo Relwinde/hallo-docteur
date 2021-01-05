@@ -6,12 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Se connecter/Creer un compte</title>
   <link rel="stylesheet" href="boot/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/connexion.css">
 </head>
 
 <body>
+  <h1 class="text-center text-danger font-weight-bold display-5 col-sm-12"><span style="width: 30px; height: 30px;" class="virus d-inline-block rounded-circle"></span>!!!Attention le virus circule toujours!!!<span style="width: 30px; height: 30px;" class="virus d-inline-block rounded-circle"></span></h1>
   <header><!--ceci est le debut du slider-->
-    <div class=" head d-flex justify-content-center">
+    <div class=" head d-flex flex-wrap justify-content-center col-sm-12">
       <div id="carouselExampleIndicators" class="carousel slide car" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -22,25 +23,25 @@
           <div class="carousel-item active">
             <img class="d-block w-100" src="images/doc.png" alt="First slide">
             <div class="carousel-caption d-none d-md-block">
-              <p>dghjkljhgdfgjh</p>
+              <p class="paraimg">Votre dossier medical disponible a tout instant<br>Consultez vos antecedant medicaux</p>
             </div>
           </div>
           <div class="carousel-item">
             <img class="d-block w-100" src="images/main.png" alt="Second slide">
             <div class="carousel-caption d-none d-md-block">
-              <p>dghjkljhgdfgjh</p>
+              <p></p>
             </div>
           </div>
           <div class="carousel-item">
             <img class="d-block w-100" src="images/rdv.jpg" alt="Third slide">
             <div class="carousel-caption d-none d-md-block">
-              <p>dghjkljhgdfgjh</p>
+              <p class="paraimg">Prenez un rendez vous a tout instant<br>Gerer vos rendez medicaux en toute aisance</p>
             </div>
           </div>
           <div class="carousel-item">
             <img class="d-block w-100" src="images/trait.png" alt="Third slide">
             <div class="carousel-caption d-none d-md-block">
-              <p>dghjkljhgdfgjh</p>
+              <p class="paraimg">Suivez le cours de votre traitement<br>Un outil de rappel pour ne manquer aucune dose</p>
             </div>
           </div>
         </div>
@@ -67,17 +68,18 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <a class="nav-link bg-info" href="#">Accueil <span class="sr-only">(current)</span></a>
+                  <a class="nav-link " href="index.html">Accueil <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link" href="contact.html">Contact</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">FAQ</a>
+                  <a class="nav-link" href="pages/FAQ.html">FAQ</a>
                 </li>
-            </div>
-            <a href="#" class="btn btn-primary btn-lg active ml-3 bg-info" role="button" aria-pressed="true">Se
+              </ul>
+            <a href="connexion.html" class="btn btn-primary btn-lg active ml-3 bg-info" role="button" aria-pressed="true">Se
               connecter<br>Creer un compte</a>
+            </div>              
           </nav>
           <!--FIN NAVBAR-->
 
@@ -88,14 +90,14 @@
         </div>
       </div>
     </div>
-    <div class=" d-flex justify-content-center"> <button type="button bottom " class="urge bg-danger"><img
+    <div class=" d-flex justify-content-center"> <button type="button bottom " class="btn btn-danger bg-danger text-white"><img
           src="images/ambulance-solid.png" alt="" width="30px"> Urgences </button></div>
 
   </header>
   <!--ceci est la fin du header-->
-  <section class="section1 mt-2">
+  <section class="section1 col-sm-12 mt-2">
     <div class="container">
-      <div class="row">
+      <div class="row col-sm-12">
         <div class="partigauche col-lg-6 col-md-6 col-sm-12 mt-5">
           <div class="text-center border">
             <h3>Se connecter</h3>
@@ -154,23 +156,23 @@
   <footer class="pied">
     <div class="container justify-content-center">
       <div class="row w-100">
-        <div class="col-lg-4 col-md-4 col-sm-12 mt-5">
-          <p>Plan du site</p>
-          <p> <a href="#">Accueil</a></p>
-          <p><a href="#">Contact</a></p>
-          <p><a href="#">Foire aux Questions</a></p>
-          <p><a href="#">Coonnection</a></p>
+        <div class="col-lg-4 col-md-4 col-sm-12 mt-5 text-white">
+          <h5 class="pied1">Plan du site</h5>
+          <p> <a href="index.html" class="text-white">Accueil</a></p>
+          <p><a href="contact.html" class="text-white">Contact</a></p>
+          <p><a href="pages/FAQ.html" class="text-white">Foire aux Questions</a></p>
+          <p><a href="connexion.html" class="text-white">Connection</a></p>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-12 mt-5">
-          <p>Partenaires</p>
-          <p><a href="#"> Bio-pharma</a></p>
-          <p><a href="#"> Alpha-biotique</a></p>
-          <p><a href="#"> Africa-cosmetique </a></p>
+        <div class="col-lg-4 col-md-4 col-sm-12 mt-5 text-white">
+          <h5 class="pied1">Partenaires</h5>
+          <p> Bio-pharma</p>
+          <p>Alpha-biotique</p>
+          <p> Africa-cosmetique</p>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-12 mt-5">
-          <p>Liens utiles</p>
-          <p><a href="#">facebook.com/hallo-docteur.com</a></p>
-          <p><a href="#">twitter.com/hallo-docteur</a></p>
+        <div class="col-lg-4 col-md-4 col-sm-12 mt-5 text-white">
+          <h5 class="pied1">Liens utiles</h5>
+          <p><a href="https://www.facebook.com/Allo-Docteur-101182791940316/?modal=admin_todo_tour&notif_id=1609858775644950&notif_t=page_invite&ref=notif" class="text-white">facebook.com/hallo-docteur.com</a></p>
+          <p><a href="https://twitter.com/HalloDocteur1" class="text-white">twitter.com/hallo-docteur</a></p>
           <p><a href="#"></a></p>
         </div>
 

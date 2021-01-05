@@ -1,13 +1,36 @@
+.virus{
+    animation: danger 1s infinite;
+}
+@keyframes danger{
+    0%{
+        background-color: yellow;
+    }
+    25%{
+background-color: red
+    }
+    50%{
+background-color: blue
+    }
+    75%{
+background-color: blueviolet
+    }
+}
+
 .car{
      width: 20%;
 }
 .navbar-nav{
     background-color:#A59F9F;
 }
+.carousel{
+    min-width: 350px;
+}
 .btn{
     line-height: 15px;
 }
-.urge{
+.paraimg{
+    background-color: black;
+    opacity: 50%;
    
    
 }
@@ -16,5 +39,11 @@
 }
 .pied{
     background-image: url(../images/foot-bckg.png);
+    text-decoration: none;
+    color: floralwhite
+}
+.pied1{
+    margin-top: 110px;
+    color: floralwhite
 }
     

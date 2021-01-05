@@ -13,16 +13,17 @@
 }
 .sect{
     background-image: url(images/sect-bckg.png);
+    background-size: cover;
 }
 .carousel{
-    min-width: 400px;
-}
-.collapse{
-    background-color: red;
+    min-width: 320px;
 }
 .urgence{
     border-radius: 5%;
-    margin-top: 5%;
+    margin-left: 70%;
+}
+.maps{
+    margin-top: 20%;
 }
 .bout{
     margin-left: 65%;
@@ -32,12 +33,43 @@
 }
 .end{
     background-image: url(../hallo-docteur/images/foot-bckg.png);
+    background-size: cover;
 }
-.row{
-    border: solid 1px yellow;
+.col-lg-4{
+    margin-top: 15%;
 }
 .rightparti{
-    margin-left: 10%;
+    margin-left: 15%;
     min-width: 50px;
+}
+.leftparti{
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.color{
+    background-color: violet;
+}
+.virus{
+    animation: danger 1s infinite;
+}
+@keyframes danger{
+    0%{
+        background-color: turquoise;
+    }
+    25%{
+        background-color: #7A7081;
+    }
+    50%{
+        background-color: yellowgreen;
+    }
+    75%{
+        background-color: violet;
+    }
+    100%{
+        background-color: turquoise;
+    }
+}
+.ccolor{
+    background-color: rgb(233, 229, 233);
 }
 

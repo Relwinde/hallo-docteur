@@ -7,8 +7,16 @@
     <link rel="stylesheet" href="boot/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="contact.css">
 </head>
-<body>
+<body> 
+  <!--debut l'avertissement corona-->
+  <h1 class="text-center text-danger font-weight-bold display-5">
+    <span style="width: 30px; height: 30px;" class="virus d-inline-block rounded-circle"></span>
+    !!!Attention le virus circule toujours!!!
+    <span style="width: 30px; height: 30px;" class="virus d-inline-block rounded-circle"></span>
+  </h1>
+  <!--fin corona-->
     <header>
+      <!--debut du carousel-->
         <div class="d-flex justify-content-center mt-3 flex-wrap">
         <div id="carouselExampleCaptions" class="carousel slide w-25" data-ride="carousel">
             <div class="carousel-inner">
@@ -17,24 +25,29 @@
               </div>
               <div class="carousel-item">
                 <img src="images/rdv.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block ccolor">
+                  <h5>Prenez un rendez-vous a tout instant</h5>
+                  <p>Gerez vos rdv medicaux en toute ainsance</p>
+                </div>
               </div>
               <div class="carousel-item">
                 <img src="images/doc.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h3>Prenez un rendez-vous à tout instant</h3>
-                  <h5>Gerez vos</h5>
+                <div class="carousel-caption d-none d-md-block ccolor">
+                  <h5>Votre dossier medical disponible à tout instant</h5>
+                  <p>Gerez vos antecedants medicaux</p>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="images/trait.png" class="d-block w-100" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                  <div class="carousel-caption d-none d-md-block ccolor">
+                    <h5>Suivez le cours de votre traitement</h5>
+                    <p>Un outil de rappel pour ne manquer aucune dose</p>
                   </div>
               </div>
             </div>
           </div>
-          <div class="">
+          <!--fin du carousel-->
+          <div>
             <h1 class="mx-sm-3 d-sm-block d-none">Hallo Docteur</h1>
             <!--debut du nav-->
             <nav class="navbar navbar-expand-sm navbar-light">
@@ -42,19 +55,20 @@
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav mr-auto color">
                   <li class="nav-item active">
-                    <a class="nav-link bg-primary" href="#">Accueil<span class="sr-only">(current)</span></a>
+                    <a class="nav-link " href="#">Accueil<span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link bg-primary" href="#">Contact</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">FAQ</a>
                   </li>
                 </ul>
+                <button type="submit" class="btn btn-primary mx-3">Créer un compte <br> Se connecter</button>
               </div>
-              <button type="submit" class="btn btn-primary mx-3">Créer un compte <br> Se connecter</button>
+
             </nav>
            <!--fin du nav-->
             <div class="row mx-3">
@@ -63,49 +77,61 @@
                 <button class="btn btn-outline-success">Rechercher</button>
               </form>              
             </div>
-            <div class="urgence">
-              <button type="button" class="btn btn-danger my-4"><img src="images/ambulance-solid.png" width="20" height="20" alt=""> Urgence</button>
-            </div>
           </div>
         </div>
     </header>
+    <div class="urgen d-flex justify-content-center my-2">
+      <button type="button" class="btn btn-danger mx-3"><img src="images/ambulance-solid.png" width="20" height="20" alt=""> Urgence</button>
+    </div>
     <section class="container mt-5 sect">
       <div class="row"> 
-        <div class="leftparti col-lg-4 col-md-4 col-sm-12 mt-3">
-          <div class="text-center">
-            <h4 class="">
+        <div class="leftparti  mt-4">
+          <div class="text-center mx-5">
+            <h4>
               Joignez-nous
             </h4>
           </div>
-          <div class="urgence">
+          <div class="urge">
             <button type="button" class="btn btn-danger my-4"> Cliquez pour appeler</button>
           </div>
-          <form class="form-block">
-            <div class="form-group">
-              <label for="inputPassword6">Nom</label>
-              <input id="inputPassword6" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
+          <form class="justify-content-center">
+            <div class="form-group row">
+              <label for="colFormLabelSm" class="col-sm-2 col-form-label">Nom</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="entrez votre nom">
+              </div>
             </div>
-            <div class="form-group">
-              <label for="inputPassword6">Prenom</label>
-              <input  id="inputPassword6" class="form-control mx-sm-3 my-2" aria-describedby="passwordHelpInline">
+            <div class="form-group row">
+              <label for="colFormLabelSm" class="col-sm-2 col-form-label">Prenom</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="colFormLabel" placeholder="Entrez votre prenom">
+              </div>
             </div>
-            <div class="form-group">
-              <label for="inputPassword6">Email</label>
-              <input  id="inputPassword6" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
+            <div class="form-group row">
+              <label for="colFormLabelSm" class="col-sm-2 col-form-label ">Email</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control form-control-Sm" id="colFormLabelSm" placeholder="Entrez votre email">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="colFormLabelSm" class="col-sm-2 col-form-label ">message</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control form-control-Sm" id="colFormLabelSm" placeholder="Laisser votre message">
+              </div>
             </div>
           </form>
           <div class="urgence">
-            <button type="submit" class="btn btn-primary mx-5">Submit</button>
+            <button type="submit" class="btn btn-danger">Envoyer</button>
           </div>
         </div>
         <div class="rightparti col-lg-6 col-md-6 col-sm-12 my-5 mx-auto">
-          <div class="row d-flex justify-content-center mt-3">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11048.461795167195!2d6.126822531223295!3d46.18826124045589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8864e218e41cfa72!2sClinique%20dentaire%20scolaire%20%C3%A0%20Carouge!5e0!3m2!1sfr!2sbf!4v1609427137828!5m2!1sfr!2sbf" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <div class="row d-flex justify-content-center">
+           <div class="maps"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11048.461795167195!2d6.126822531223295!3d46.18826124045589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8864e218e41cfa72!2sClinique%20dentaire%20scolaire%20%C3%A0%20Carouge!5e0!3m2!1sfr!2sbf!4v1609427137828!5m2!1sfr!2sbf" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
             <div class="col-12 d-flex justify-content-center">
               <h3>suivez-nous</h3>
             </div>
-            <img src="images/Facebook_48px.png" alt="">
-            <img src="images/Twitter_48px.png" alt="">
+            <a href="https://www.facebook.com/Allo-Docteur-101182791940316/?ref=page_internal"><img src="images/Facebook_48px.png" alt=""></a>
+           <a href="https://twitter.com/i/connect_people"><img src="images/Twitter_48px.png" alt=""></a> 
           </div>
         </div>
       </div>
@@ -116,21 +142,24 @@
 </body>
 <footer>
   <div class="end d-flex justify-content-center row flex-wrap mx-auto container">
-    <div class="col-lg-4">
-      <h3>Plan du site</h3>
-      Accueil <br>
-      Contacts <br>
-      FAQ <br>
-      Connection
+    <div class="col-lg-4 text-white">
+      <h5>Plan du site</h5>
+     <a href="contact.html" class="text-white text-decoration-none"> Accueil </a><br>
+      <a href="FAQ.html" class="text-white text-decoration-none">Contacts</a> <br>
+     <a href="connection.html" class="text-white text-decoration-none"> FAQ</a> <br>
+      <a href="index.html" class="text-white text-decoration-none">Connection</a>
     </div>
-    <div class="col-lg-4">
-      <h3>Partenaires</h3>
-      Simplon
-      AUF
+    <div class="col-lg-4 text-white">
+      <h5>Partenaires</h5>
+     Bio-pharma<br>
+     Alpha-biotique<br>
+       Africa-cosmetique<br>
     </div>
-    <div class="col-lg-4">
-      <h3>Liens utiles</h3>
-      allo-docteur.com
+    <div class="col-lg-4 text-white">
+      <h5>Liens utiles</h5>
+      <a href="https://www.facebook.com/Allo-Docteur-101182791940316/?ref=page_internal" class=" text-decoration-none">facebook.com/allo-docteur.com</a><br>
+      <a href="https://twitter.com/HalloDocteur1" class=" text-decoration-none">twitter.com/Hallo-docteur</a><br>
+      <a href="#"></a>
     </div>
   </div>
 </footer>
